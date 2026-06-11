@@ -1,0 +1,14 @@
+/* Variables de couleur et réinitialisation globale */
+:root {
+    --primary-blue: #7bc6f7;
+    --dark-gray: #333333;
+    --light-gray: #999999;
+    --border-gray: #e0e0e0;
+    --bg-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
