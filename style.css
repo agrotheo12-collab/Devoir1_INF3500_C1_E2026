@@ -55,3 +55,40 @@ body {
     margin-bottom: 40px;
     line-height: 1.5;
 }
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Champs de formulaire personnalisés (Bordure inférieure uniquement) */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 0.75rem;
+    color: var(--light-gray);
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+/* Style de l'étiquette active demandée */
+.input-group label.active-label {
+    color: var(--primary-blue);
+}
+
+.input-group input, 
+.input-group select {
+    border: none;
+    border-bottom: 1px solid var(--border-gray);
+    padding: 10px 0;
+    font-size: 0.95rem;
+    color: var(--dark-gray);
+    background: transparent;
+    outline: none;
+    width: 100%;
+    border-radius: 0;
+}
