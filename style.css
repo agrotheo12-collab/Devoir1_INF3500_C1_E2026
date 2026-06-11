@@ -12,3 +12,46 @@
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--dark-gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Conteneur principal en Flexbox */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Section Formulaire */
+.form-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.form-header p {
+    color: var(--light-gray);
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
