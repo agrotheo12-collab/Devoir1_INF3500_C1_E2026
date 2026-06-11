@@ -92,3 +92,95 @@ body {
     width: 100%;
     border-radius: 0;
 }
+/* Flèche personnalisée pour le select moderne */
+.select-group {
+    position: relative;
+}
+
+.select-group::after {
+    content: '➔';
+    transform: rotate(90deg);
+    font-size: 0.7rem;
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    color: var(--light-gray);
+    pointer-events: none;
+}
+
+.input-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+/* État actif / sélectionné */
+.input-group input:focus, 
+.input-group select:focus {
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+/* Case à cocher */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: var(--light-gray);
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-group a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton de soumission style pilule */
+.btn-submit {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 40px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(123, 198, 247, 0.3);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-submit:hover {
+    background-color: #62b3e8;
+}
+
+.btn-submit:active {
+    transform: scale(0.98);
+}
+
+/* Section Image */
+.image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcfcfc; 
+    padding: 20px;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
