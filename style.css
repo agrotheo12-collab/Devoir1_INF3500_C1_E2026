@@ -184,3 +184,28 @@ body {
     height: auto;
     object-fit: contain;
 }
+/* --- RÉSULTAT RESPONSIVE --- */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .image-section {
+        order: -1; /* Place l'image en haut sur petit écran */
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .form-section {
+        padding: 25px 15px;
+    }
+
+    .form-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .btn-submit {
+        width: 100%; /* Bouton pleine largeur sur mobile */
+        text-align: center;
+    }
+}
